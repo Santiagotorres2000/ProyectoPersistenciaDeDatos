@@ -9,6 +9,7 @@ import model.PersonaDTO;
 import model.ProfesionalSaludDTO;
 import model.RegistroVacunacionDTO;
 import dao.CampañaVacunacionDAO;
+import dao.Conexion;
 import model.CampañaVacunacionDTO;
 
 public class Main {

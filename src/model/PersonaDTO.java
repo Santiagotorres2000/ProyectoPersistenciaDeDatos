@@ -5,19 +5,23 @@ public class PersonaDTO {
     private String nombre;
     private String cedula;
     private int edad;
+    private String genero;
+    private String direccion;
 
-    // Constructor vacío
+    
     public PersonaDTO() {}
 
-    // Constructor con parámetros
-    public PersonaDTO(int idPersona, String nombre, String cedula, int edad) {
+    
+    public PersonaDTO(int idPersona, String nombre, String cedula, int edad, String genero, String direccion) {
         this.idPersona = idPersona;
         this.nombre = nombre;
         this.cedula = cedula;
         this.edad = edad;
+        this.genero = genero;
+        this.direccion = direccion;
     }
 
-    // Getters y Setters
+    
     public int getIdPersona() {
         return idPersona;
     }
@@ -48,5 +52,21 @@ public class PersonaDTO {
 
     public void setEdad(int edad) {
         this.edad = edad;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 }
