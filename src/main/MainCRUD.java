@@ -43,12 +43,12 @@ public class MainCRUD {
 
                             PersonaDTO nueva = new PersonaDTO(0, nombre, cedula, edad, genero, direccion);
                             personaDAO.insertarPersona(nueva);
-                            System.out.println("✅ Persona creada con ID: " + nueva.getIdPersona());
+                            System.out.println("Persona creada con ID: " + nueva.getIdPersona());
                             break;
 
                         case 2:
                             List<PersonaDTO> personas = personaDAO.obtenerPersonas();
-                            System.out.println("\n📋 Lista de personas:");
+                            System.out.println("\n Lista de personas:");
                             for (PersonaDTO p : personas) {
                                 System.out.println("ID: " + p.getIdPersona()
                                         + " | Nombre: " + p.getNombre()
@@ -64,7 +64,7 @@ public class MainCRUD {
                             int buscarId = sc.nextInt(); sc.nextLine();
                             PersonaDTO buscada = personaDAO.buscarPorId(buscarId);
                             if (buscada != null) {
-                                System.out.println("🔎 Persona encontrada:");
+                                System.out.println(" Persona encontrada:");
                                 System.out.println("Nombre: " + buscada.getNombre()
                                         + " | Cédula: " + buscada.getCedula()
                                         + " | Edad: " + buscada.getEdad()
